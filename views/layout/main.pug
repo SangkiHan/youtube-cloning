@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title #{siteName}
+        link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css", rel="stylesheet")
+        link(rel="stylesheet", href="/static/styles.css")
+    body
+        include ../partial/header
+        main 
+            block contents
+        include ../partial/footer
+        script(src="/static/main.js")
+    

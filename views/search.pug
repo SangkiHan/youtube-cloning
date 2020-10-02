@@ -1,0 +1,18 @@
+extends layout/main
+include mixins/videoBlock
+block contents
+    .search__header
+        h3 searching by #{Searchingby}
+    .search__video
+        if videos.length === 0
+            h5 No Searching
+        else
+            h5 searching for #{Searchingby}
+        each item in videos
+            +videoBlock({
+                fileUrl:item.fileUrl,
+                id:item.id,
+                title:item.title,
+                description:item.description,
+                views:item.views
+            })

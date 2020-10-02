@@ -1,0 +1,18 @@
+extends layout/main
+
+block contents
+    .video-detail_container
+        .video__player
+            video(src=`/${video.fileUrl}`, controls = true)
+        .video__info
+            a(href=routes.editVideo(video.id)) 
+                button edit video
+            h5.video__title= video.title
+            p.video__description= video.description
+            p.video__views= video.views
+        .video__comments 
+            if video.comment.length === 0
+                h5 No Comment
+            else 
+                h5 #{video.comment.length} Comment 
+            

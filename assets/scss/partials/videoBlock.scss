@@ -1,0 +1,23 @@
+.videoBlock{
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  video{
+    display: block;
+    margin: 0px auto;
+  }
+  .videoBlock__title{
+    padding:20px,0px,8px;
+  }
+}
+.videoBlock {
+  video {
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  .videoBlock__title {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}

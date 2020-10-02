@@ -1,0 +1,9 @@
+extends layout/main
+block contents
+    .form-container
+        form(action=`/videos${routes.upload}`, method="post", enctype="multipart/form-data")
+            input(type="file",name="videofile",value="동영상")
+            input(type="text",name="title",placeholder="title")
+            textarea(name="description" placeholder="description")
+            input(type="submit" value="upload")
+    
